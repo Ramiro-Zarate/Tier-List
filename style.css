@@ -1,0 +1,130 @@
+:root{
+    --color-s: #ff7f7f;
+    --color-a: #ffbf7f;
+    --color-b: #ffdf7f;
+    --color-c: #ffff7f;
+    --color-f: #bfff7f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#logo{
+    width: 25%;
+    height: auto;
+    margin: 40px auto 40px auto; 
+    display: block;  
+}
+
+#place{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tier{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: #444444;
+    width: 600px;
+    height: 100px;
+    border: solid 1px white;
+    font-size: 20px;
+}
+
+.tS{
+    display: flex;
+    background-color: var(--color-s);
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tA{
+    display: flex;
+    background-color: var(--color-a);
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tB{
+    display: flex;
+    background-color: var(--color-b);
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tC{
+    display: flex;
+    background-color: var(--color-c);
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tF{
+    display: flex;
+    background-color: var(--color-f);
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#sectionButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    & button{
+        background-color: #000;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}
+
+#sectionItems{
+    display: block;
+    border: solid white 1px;
+    width: 50%;
+    height: 150px;
+    margin: 40px auto 40px auto; 
+}
+
+.imgItem{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-color: white;
+    cursor: grab;
+}
